@@ -1,0 +1,169 @@
+/*
+    Não consegui fazer: 
+    - site preencher o espaço do cabeçalho --> margin: 0;
+    - Menu interativo
+    - Video de acordo com o tamnho do site
+    - As letras e imagens ficarem dentro / distante da margem branca
+    - Responsividade do site
+    - a lista
+*/
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'titulo';
+    src: url(fontes/idroid.otf);
+}
+
+*{ /* Sempre começar com isso e :root para criar variaveis*/
+    margin: 0; /* Fazer que o cabeçalho do site toque em cima*/
+    padding: 0;
+}
+
+body{
+    background-color: #c5ebd6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    background-image: linear-gradient(to bottom,#3bd47f,#299156,#1a5c38);
+    text-align: center;
+    color: white;
+    min-height: 150px;
+    padding-top: 40px;
+}
+
+header p{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+header h1{
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.452);
+}
+
+main strong{
+    color: #2fa866;
+    font-weight: bold;
+}
+
+nav{
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.219);
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+nav > a:hover{
+    background-color: #60eb9e59;
+    padding: 2px 1px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+a.externo::after{
+    content: '\1f517';
+}
+
+div.video{
+    background-color: #195534;;
+    margin: 0px -30px 30px -30px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 55%; /* Barra preta do vídeo*/
+}
+
+div iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #195534;
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-color: white;
+    text-align: justify;
+    border-radius: 10px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 30px; /* Para dar uma afastada da barra branca*/
+    box-shadow: 0px 0px 10px black;
+}
+
+p{
+    text-align: justify;
+    line-height: 1.5em;
+    text-indent: 30px; /* Fazer a identação do texto*/
+    margin: 20px 0px;
+}
+
+picture{
+    display: block;
+    margin: 0 auto;
+}
+
+article h1{
+    font-family: 'titulo';
+    margin-top: 20px;
+}
+
+.subtitulo{
+    font-family: 'titulo';
+    background-image: linear-gradient(to right, #74f3abdc, transparent);
+}
+
+.aprendermais{
+    background-color: #8ff3ba83;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.aprendermais ul{
+    margin-left: 50px;
+    columns: 2; /* Dividir a coluna em dois*/
+    list-style-type: '\2714';
+}
+
+.aprendermais h3{
+    background-color: #2fa866;
+    color: white;
+    padding: 10px;
+    margin: -20px -20px 0px -20px; /* Para a amrgin crescer para dentro*/
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer{
+    background-color: #1a5c38;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 5px black;
+}
+
+.centralizar{
+    text-align: center;
+}
+
+img{
+    display: block; /* Remover espaços vazios embaixo da imagem*/
+    max-width: 100%; /* A img se ajusta ao tamanho da caixa pai*/
+    height: auto; /* Mantém a proporção correta*/
+    margin: 20px auto; /* centraliza a img e da um espaço em cima e embaixo*/
+}
+
+
+

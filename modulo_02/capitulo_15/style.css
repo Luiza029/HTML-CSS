@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+
+/*
+    em HTML é id    == CSS é #
+    em HTML é class == em CSS é .
+
+    ID só se usa uma vez no documento
+    O class pode ser usado em mais vezes
+
+    pode colocar mais de uma classe em um elemento
+*/
+
+body{
+    background-color: #E0EEC6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #243E36;
+}
+
+#principal{
+    text-align: center;
+    background-color: #243E36;
+    color: white;
+}
+
+h2{
+    color: #7CA982;
+}
+
+.basico{
+    color: #60d156;
+}
+
+.intermediario{
+    color: #c9d156;
+}
+
+.avancado{
+    color: #d15656;
+}

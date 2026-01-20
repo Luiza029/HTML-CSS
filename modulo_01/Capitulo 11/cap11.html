@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos</title>
+</head>
+<body>
+    <h1>Fotos Dinâmicas</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+    <!-- A tag picture permite que vc crie varias fontes (igual ao um if e a ordem importa)-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir Áudios em HTML5</p>
+    <!-- <audio src="midia/musica.mp3" controls></audio> -->
+
+    <!-- O "source" vai carregar o primeiro, se n carregar vai para o segunda e assim vai indo-->
+    <audio preload="metadata" controls loop>
+        <source src="midia/musica.mp3" type="audio/mpeg">
+    </audio>
+    <h1>Reproduzindo Vídeo</h1>
+    <p>Estes vídeo está hospedado no meu próprio servidor</p>
+    <!-- Tem que colocar varias opçoes de vídeos, igual a da imagem, mas eu so tenho um instalado-->
+    <video width="500" poster="imagens/bartolomeu.png"" controls>
+        <!-- 
+            <source>
+            <source>
+        -->
+            <source src="midia/meu-video.mp4" type="video/mp4">
+    </video>
+    
+    <h1>Inserindo Vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-Itzq0sDuHk?si=UbojXVsl28qeM7a_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Inserindo Vídeos do Vimeo</h1>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1148930285?h=72804e0d1f" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
+</body>
+</html>

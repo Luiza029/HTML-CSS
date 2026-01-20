@@ -1,0 +1,45 @@
+#principal{
+    color: #303561;
+    text-align: center;
+    font-size: 3em;
+}
+
+.p1{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #9FB382, #70894C,#D6DECB);
+    background-attachment: fixed;
+}
+
+#promocao{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    box-shadow: 2px 2px 2px black;
+    font-family: 4em;
+}
+
+a:active{
+    color: yellow;
+}
+
+a::before{
+    content: "🔗";
+}
+
+.p1::first-letter{
+    font-size: 2.5em; /* Define o tamanho da letra*/
+    color: aqua; 
+    font-weight: bold; /* a espessura da letra*/
+    float: left;  /* Faz o texto envolver a letra*/
+    margin-right: 5px; 
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Portal de Mídia</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+        h1{
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+        }
+        h2{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mini Portal de Mídia</h1>
+    <h2>Imagens Adaptáveis</h2>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" sizes="imagen/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" sizes="imagen/png">
+        <img src="imagens/g.png" alt="">
+    </picture>
+    <h2 style="background-color: brown;">Reprodutor de Áudio</h2>
+    <audio src="midia/On The Flip.mp3" controls loop></audio>
+    <h2 style="background-color: brown;">Duelo De Vídeos</h2>
+    <p>Hospedagem Local</p>
+    <!-- Era a unica foto que eu tenho-->
+    <video poster="imagens/thumb-hardware.png" src="midia/meu-video.mp4" controls width="500"></video>
+    <p>Hospedagem Youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QJI0an6irrA?si=hgF5lNmqwQUfTmYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

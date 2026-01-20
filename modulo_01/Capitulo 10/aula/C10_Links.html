@@ -1,0 +1,38 @@
+<!-- 
+    Links externos:
+        <a></a> -> Cria uma âncora, o seu principal atributo dessa tag é o href, dentro dela colocamos um URL para ir para outro site e dentro da tag tem o target e o rel
+
+        Target:
+        _blank -> vai abriri o link em uma nova janela em branco
+        _self -> vai abrir o link na janela ou freme atual (padrão)
+        _top -> vai desfazer todos os frames e abrir o destino no navegador completo
+        _parent -> similar ao uso do _top em uma referência à janela mãe
+
+        Rel:
+        next -> indica que o link é para a próxima parte do documento atual
+        prev -> indica que o link é para a parte anterior do link atual
+        author -> indica que é um link para o site do autor do artigo atual
+        external -> indica que é um link para outro site que n faz parte do site atual
+        nofollow -> indica que é um link para um site não endossado, como um link pago
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Vc pode acessar o meu <a href="https://github.com/Luiza029" target="_blank" rel="external">repositório público no GitHub</a></p> <!-- o target e o real serve para quando o usuario clicar no link, abriri outra pagina para n fechar o seu site-->
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site. Se vc quiser, pode acessar a minha <a href="Pag02C10.html" rel="prev">segunda página do site</a></p>
+    <p>Vc também pode acessar nossa <a href="noticias/Pag03C10.html" rel="next">página de notícias</a></p>
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" type="application/pdf">Baixar livro em PDF</a></li>
+        <li><a href="livro/10 - Ligações em toda parte - Copia.zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>

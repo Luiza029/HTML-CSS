@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none; /* Tirar o sublinhado do link*/ 
+            font-weight: bold;
+        }
+
+        a:visited{ /* Link visitado*/
+            color: black;
+        }
+
+        a:hover{
+            text-decoration: underline; /* mostra a linha apenas quando passar o mouse em cima*/
+            color: blueviolet;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        a::after{ /* Dps de todos os links*/
+            content: ' [Link]'; /* conteudo */
+            text-decoration: none; /* Para n ficar em negrito*/
+            font-weight: normal;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Luiza029" target="_blank">Repositório do GitHub</a></li>
+        <li><a href="https://www.youtube.com/@AM3NlC" target="_blank">Canal Do Youtube</a></li>
+        <li><a href="https://www.amazon.com.br/" target="_blank">Site da Amazon</a></li>
+    </ul>
+    <h1>IMPORTANTE</h1>
+    <ul>
+        <li>: pseudo-classes</li>
+        <li>:: pseudo elemento</li>
+        <li>> filho</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body{
+    background-color: bisque;
+    font-family: 20px;
+}
+h1{
+    color: rgb(255, 255, 255);
+    background-color: darkgoldenrod;
+}
+h2{
+    color: brown;
+}

@@ -1,0 +1,57 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(187, 183, 183);
+    
+    padding: 0;
+}
+#principal{
+    text-align: center;
+    background-color: yellow;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.495);
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.titulo{
+    text-align: center;
+    background-color: yellow;
+    padding: 4px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.495);
+    border-radius: 5px;
+}
+
+a:hover{
+    text-decoration: none;
+    color: yellow;
+}
+
+span{
+    color: blueviolet;
+}
+
+main{
+    padding: 0 10px; /* 0 para cima/baixo e 10 para os lados*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247);; /* Para fazer um quadrado de sombra*/
+}
+
+article{
+    padding: 20px;
+}
+
+article p{
+    margin-left: 30px;
+}
+
+li{
+    margin-bottom: 15px;
+}
+
+aside{
+    border-left: 5px solid yellow;
+    
+}
+
+nav{
+    margin-left: 30px;
+}

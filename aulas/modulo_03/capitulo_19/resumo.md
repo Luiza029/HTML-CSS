@@ -19,3 +19,17 @@
     - background-size: cover;
 
 ## Alinhamento Vertical
+- Propriedades de Posicionamento:
+    - Position relative: Define o elemento como uma referência para seus filhos
+    - Position Absolute: Tira o elemento do fluxo normal da página, fazendo-o "flutuar". Ele se posiciona em relação ao elemento pai mais próximo que tenha 'Position relative'
+
+- Propriedades de Deslocamento: 
+    - top: 50%: Empurra o elemento para baixo, começando exatamente na metade da altura do elemento pai
+    - left: 50%: Empurra o elemento para a direita, começando exatamente na metade da largura do elemento pai
+
+- Propriedades de Transformação
+    - transform: translate(-50%, -50%): Move o elemento em relação ao seu próprio tamanho. Garante que o centro do objeto esteja no centro da tela, e não apenas a sua ponta
+
+## Unidade de Medida
+- VH: Unidade baseada na altura da tela visível. 
+

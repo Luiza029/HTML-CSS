@@ -4,7 +4,7 @@
 
 - background-repeat: Controla se a imagem deve ser repetida (repeat) ou não (no-repeat)
 
-- background-position: Defina o alinhamento da imagem. 
+- background-position: Define o alinhamento da imagem. 
 
 - background-size: 
     - Cover: Faz a imagem cobrir toda a área disponível sem sobrar espaço

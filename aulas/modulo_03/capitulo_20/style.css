@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+:root{
+    --fontetexto1: Verdana, Geneva, Tahoma, sans-serif;
+    --fontetexto2: "Montserrat", sans-serif;
+    --fontetexto3: "Passion One", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    background-color: darkgray;
+    min-height: 100vh;
+    font-family: var(--fontetexto1);
+}
+
+/* CABEÇALHO */
+header{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 70px;
+    text-align: center;
+}
+
+header h1{
+    font-family: var(--fontetexto3);
+    font-size: 80px;
+    font-variant: small-caps;
+}
+
+header p{
+    font-size: 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 1.8em;
+    font-family: var(--fontetexto2);
+    font-weight: bold;
+}
+
+.normal{
+    background-color: #ffffff;
+}
+
+#img1{
+    padding: 100px 50px;
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.733);
+}
+
+#img1 p, #img2 p{ 
+    background-color: rgba(0, 0, 0, 0.253); 
+    color: #ffffff;
+    display: inline-block; /* Vai fazer um caixa que se adapta com o tamanho do conteúdd*/ 
+    padding: 10px;
+    text-shadow: 2px 2px 0px black;
+}
+
+#img2{
+    padding: 100px 50px;
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed; /* Apesar de ser contraditório, o fixed faz com que a imagem fique 'presa' ao fundo da*/
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.733);
+}
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 5px;
+}

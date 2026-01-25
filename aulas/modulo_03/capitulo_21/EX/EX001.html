@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. tabela</title>
+    <style>
+
+        *{
+            margin: 0;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #universo{
+            position: relative;
+            background-image: url(espaco.jpg);
+            height: 100vh;
+            background-size: cover;
+        }
+
+        #tabela{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        table{
+            width: 400px;
+            height: 200px;
+            text-align: center;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 3px 3px 3px black;
+        }
+
+
+        td, th{
+            border: 1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="universo">
+        <table id="tabela">
+
+            <thead>
+                <th>Destino</th>
+                <th>Duração</th>
+                <th>Preço</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Marte</td>
+                    <td>7 Meses</td>
+                    <td>R$ 1.500.000</td>
+                </tr>
+
+                <tr>
+                    <td>Lua</td>
+                    <td>3 Dias</td>
+                    <td>R$ 250.000</td>
+                </tr>
+
+                <tr>
+                    <td>Saturno</td>
+                    <td>6 Anos</td>
+                    <td>R$ 5.800.000</td>
+                </tr>
+
+                <tr>
+                    <td>Vênus</td>
+                    <td>4 Meses</td>
+                    <td>R$ 900.000</td>
+                </tr>
+            </tbody>
+
+        </table>   
+
+    </section>
+</body>
+</html>

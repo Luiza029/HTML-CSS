@@ -26,7 +26,7 @@
     position: relative;
     top: 80px;
     left: 22px;
-    width: 269px;
+    width: 267px;
     height: 471px;
 }
 
@@ -36,12 +36,14 @@ ul{
 }
 
 .logo{
-    border-radius: 100px;
-    width: 50px;
+    border-radius: 50%;
+    width: 70px;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .logo:hover{
     padding: 12px;
-    box-shadow: 2px 2px 2px black;
+    transform: translate(-3px, -3px);
+    transition: trasnform .4s;
 }

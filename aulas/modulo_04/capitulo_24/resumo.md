@@ -15,6 +15,9 @@
 - submit: Botão para enviar o formulário
 - reset: Botão para limpar o formulário
 - number: Só aceita números
+- tel: Para telefones
+- email: Para emails
+- range: Valor em escala númerica (deslizando uma barrinha)
 
 ## Atributos
 - minlength="x": Vai dizer a quantidade minima de caracteres 
@@ -22,6 +25,7 @@
 - required, deixa um campo obrigatório
 - placeholder: Uma frase que vai aparecer dentro da caixa do formulário
 - step: O quanto um número vai variar de um para o outro (se ele cresce de 1 em 1, 0.5 em 0.5 ...)
+- pattern="^(\d{2}\)\d{4,5}-\d{4}$: Serve para que o formulário do celular aceite apenas (xx)xxxxx-xxxx (Estudar mais sobre RegEx)
 
 ## AutoComplete
 - autocomplete="off / on": Se vai aparecer a caixa de sujestão quando o usuário digite o nome

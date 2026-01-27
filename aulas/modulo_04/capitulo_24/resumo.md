@@ -21,6 +21,15 @@
 - checkbox: Vai criar uma caixa de cheklist
 - radio: Botão de opção única 
     * Para que no radio o usuário possa marcar apenas uma opção, no 'name', tem que por o msm nome para ambos
+- Cor: Vai aparecer uma tabela de cor
+- File: Pode colocar uma foto
+    * Não pode usar o método GET, apenas o POST
+
+## Outros Tipos
+- select e option: Criado para criar listas suspensas
+- datalist: Permitir criar caixas de texto com sugestões, onde o usuário pode digitar livremente ou escolher entre as opções pre-definidas
+- textarea: Um campo de texto multlinha, ideal para mensagens ou comentários
+    * Quando for usar o textarea, n pode usar o metodo get, apenas post
 
 ## Atributos
 - minlength="x": Vai dizer a quantidade minima de caracteres 
@@ -36,3 +45,8 @@
 * Dentro do input:
     - autocomplete="username": Para completar o nome do usuário
     - autocomplete="current-password": Para aparecer a senha atual
+
+## Output
+- oniput: "Quando eu entrar com os dados"
+- output: Ele n serve para enviar dados, apenas para mostrar na tela
+- oninput="i'variavel'.innerHTML = Number'variavel' (código padrão)

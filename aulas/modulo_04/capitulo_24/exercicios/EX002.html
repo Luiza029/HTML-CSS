@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pré-Matrícula</title>
+    <style>
+        li{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Pré-Matrícula</h1>
+    <form action="cadastro" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Identificação do Aluno</legend>
+            <ul>
+                
+                <li>
+                    <label for="inome">Nome Completo do Aluno</label>
+                    <input type="text" name="nome" id="inome" required maxlength="30">
+                </li>
+            
+                <li>
+                    <label for="idata">Data de Nascimento</label>
+                    <input type="date" name="data" id="idata" required>
+                </li>
+            
+                <li>
+                    <label for="iemail">Email</label>
+                    <input type="email" name="email" id="iemail">
+                </li>
+                
+            </ul>
+        </fieldset>
+        
+        <br>
+        
+        <fieldset>
+            <legend>Opções de Curso</legend>
+            <ul>
+                
+                <li>
+                    <label for="inivelescolar">Nível Escolar</label>
+                    <select name="nivel" id="inivelescolar">
+                        <option value="" aria-checked="">--- Escolha ---</option>
+                        <option value="EF">Ensino Fundamental</option>
+                        <option value="EM">Ensino Médio</option>
+                        <option value="PV">Pré-Vestibular</option>
+                    </select>
+                </li> 
+            
+
+            
+                <li>
+                    <label for="iperiodo">Período de Preferência</label>
+                    <input type="radio" name="Periodo" id="imanha"><label for="imanha">Manhã</label>   
+                    <input type="radio" name="Periodo" id="itarde"><label for="itarde">Tarde</label>  
+                    <input type="radio" name="Periodo" id="inoite"><label for="inoite">Noite</label>  
+                </li> 
+            
+            
+                <li>
+                    <label for="iarea">Áreas de Interese</label>
+                    <input type="checkbox" name="matematica" id="imatematica"><label for="imatematica">Matemática</label>
+                    <input type="checkbox" name="historia" id="ihistoria"><label for="ihistoria">História</label>
+                    <input type="checkbox" name="artes" id="iartes"><label for="iartes">Artes</label>
+                    <input type="checkbox" name="esportes" id="iesportes"><label for="iesportes">Esportes</label>
+                </li>
+            
+
+                <li>
+                    <label for="inivel">Nível de Conhecimento em Informática</label>
+                    <input type="range" name="nivel" id="inivel" min="0" max="10" step="1" required value="0" oninput="ival.innerHTML = Number(inivel.value)">
+                    <output id="ival">0</output>
+                </li>
+                    
+
+                <li>
+                    <label for="ifoto">Foto do Aluno</label>
+                    <input type="file" name="foto" id="ifoto" required>
+                </li>
+            
+
+                <li>
+                    <label for="iinfo">Informações Médicas</label> <br>
+                    <textarea name="info" id="iinfo" placeholder="Digite as informações médicas do aluno" rows="3" cols="30"></textarea>
+                </li>
+            
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

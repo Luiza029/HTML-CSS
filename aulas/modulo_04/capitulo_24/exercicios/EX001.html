@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Visita</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro" method="post">
+        <fieldset>
+            <legend>Detalhes de Visita</legend>
+            <p>
+                <label for="idata">Data da Visita</label>
+                <input type="date" name="data" id="idata" required>
+            </p>
+
+            <p>
+                <label for="ihora">Hora da Visita</label>
+                <input type="time" name="tempo" id="ihora" required>
+            </p>
+
+            <p>
+                <label for="iurgencia">Nível de Urgência (1 a 5)</label>
+                <input type="range" name="urgencia" id="iurgencia" min="1" max="5" value="1" oninput="ival.innerHTML = Number(iurgencia.value)" required>
+                <output id="ival">1</output>
+            </p>
+
+            <p>
+                <label for="icor">Cor do Equipamento danificado</label>
+                <input type="color" name="cor" id="icor" required>
+            </p>
+
+            <p>
+                <label for="iproblema">Digite o problema do seu Produto:</label>
+                <br>
+                <textarea name="problema" id="iproblema" placeholder="Descreva o Problema do Produto Aqui" required maxlength="1000"></textarea>
+
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

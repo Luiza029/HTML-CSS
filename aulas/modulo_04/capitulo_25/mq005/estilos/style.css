@@ -49,8 +49,6 @@ menu ul{
 }
 
 menu ul li{
-    padding: 10px;
-    margin: 2px;
     background-color: rgba(0, 0, 0, 0.521);
     border-radius: 10px;
 }
@@ -58,9 +56,9 @@ menu ul li{
 menu ul li a{
     display: block;
     padding: 10px;
-    border-top: 2px solid rgba(0, 0, 0, 0.521);
     text-decoration: none;
     color: white;
+    margin: 5px;
 }
 
 menu ul li a:hover{
@@ -70,7 +68,7 @@ menu ul li a:hover{
 
 main{
     background-color: white;
-    width: 600px;
+    width: 400px;
     margin: auto;
     text-align: justify;
     padding: 20px;

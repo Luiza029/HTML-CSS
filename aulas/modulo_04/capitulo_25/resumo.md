@@ -1,0 +1,1 @@
+- media query é igual midia type + midia fictures

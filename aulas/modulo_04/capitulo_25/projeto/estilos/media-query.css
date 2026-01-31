@@ -1,0 +1,61 @@
+@media screen and (min-width: 768px) and (max-width:992px) {
+    #login{
+        width: 700px;
+    }
+
+    section#login > div#foto{
+        float: left;
+        width: 40%;
+        height: 400px;
+    }
+
+    section#login > div#forms{
+        float: right;
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    #forms #esqueci{
+        padding: 3px 120px;
+    }
+
+    #forms #entar{
+        width: 350px;
+    }
+
+    #forms .caixa{
+        width: 500px;
+    }
+    
+    
+}
+
+@media screen and (min-width:992px){
+    #login{
+        width: 750px;
+    }
+
+    div#forms{
+        width: 60%;
+        margin: auto;
+    }
+
+    #forms #esqueci{
+        padding: 3px 150px;
+    }
+
+    #forms #entar{
+        width: 410px;
+    }
+
+    #forms .caixa{
+        width: 500px;
+    }
+
+    #login #fundo{
+        width: 400px;
+        margin: auto;
+        margin-bottom: 5px;
+}
+
+}

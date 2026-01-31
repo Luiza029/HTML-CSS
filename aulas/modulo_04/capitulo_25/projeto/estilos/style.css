@@ -46,7 +46,6 @@ body{
     overflow: hidden;
 
     background-color: white;
-    width: 250px;
     min-height: 400px;
     display: block;
     border-radius: 20px;
@@ -103,23 +102,27 @@ body{
 }
 
 #forms #esqueci{
+    display: block;
+    width: 45%;
+    margin: auto;
+    font-size: 0.8em;
     border: 2px solid black;
     text-decoration: none;
     color: #1B3022;
     padding: 3px 55px;
     border-radius: 5px;
-    margin: px;
+    
 }
 
 #forms .caixa{
     text-align: center;
-    width: 200px;
+    width: 80%;
     border-radius: 10px;
     padding: 3px;
 }
 
 span{
-    width: 30px;
+    width: 5px;
     color: white;
     padding: 3px;
 }

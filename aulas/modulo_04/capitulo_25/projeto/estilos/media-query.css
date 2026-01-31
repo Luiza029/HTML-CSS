@@ -16,7 +16,7 @@
     }
 
     #forms #esqueci{
-        padding: 3px 120px;
+        width: 30%;
     }
 
     #forms #entar{
@@ -24,7 +24,13 @@
     }
 
     #forms .caixa{
-        width: 500px;
+        width: 490px;
+    }
+
+    span{
+        width: 30px;
+        color: white;
+        padding: 3px;
     }
     
     
@@ -41,7 +47,7 @@
     }
 
     #forms #esqueci{
-        padding: 3px 150px;
+        width: 30%;
     }
 
     #forms #entar{
@@ -56,6 +62,16 @@
         width: 400px;
         margin: auto;
         margin-bottom: 5px;
-}
+    }
+
+    #forms .caixa{
+        width: 490px;
+    }
+
+    span{
+        width: 30px;
+        color: white;
+        padding: 3px;
+    }
 
 }

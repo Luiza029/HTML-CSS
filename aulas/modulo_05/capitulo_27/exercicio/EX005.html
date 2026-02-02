@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container1{
+            display: flex; /* Ele vai ser o pai em relação com os itens 1*/
+            background-color: aqua;
+
+            flex-direction: column;
+            align-items: start;
+        }
+        
+        .item1{
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container2{
+            display: flex;
+            background-color: darkblue;
+
+            flex-direction: column;
+            align-items: end;
+        }
+        
+        .item2{
+            border: 1px solid white;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container3{
+            display: flex;
+            background-color: darkgoldenrod;
+
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .item3{
+            border: 1px solid white;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container4{
+            display: flex;
+            background-color: firebrick;
+
+            flex-direction: column;
+            align-items: baseline;
+        }
+        
+        .item4{
+            border: 1px solid white;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        p{
+            padding: 10px;
+        }
+
+        h4{
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <h1>Resumo de Flex Box</h1>
+    <h4>align-items é em relação a cross-axis (coluna)</h4>
+    <br>
+
+    <h3>align-items: start</h3>
+    <p>Alinha os itens ao inínico do eixo transversal</p>
+    <div class="container1">
+        <div class="item1">A</div>
+        <div class="item1">B</div>
+        <div class="item1">C</div>
+        <div class="item1">D</div>
+        <div class="item1">E</div>
+        <div class="item1">F</div>
+        <div class="item1">G</div>
+    </div>
+
+    <br>
+
+    <h3>align-items: end;</h3>
+    <p>Alinha os itens ao final do eixo transversal</p>
+    <div class="container2">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+        <div class="item2">D</div>
+        <div class="item2">E</div>
+        <div class="item2">F</div>
+        <div class="item2">G</div>
+
+    </div>
+
+    <br>
+
+    <h3>align-items: center; </h3>
+    <p>Vai deixar os itens centralizado no eixo transversal</p>
+    <div class="container3">
+        <div class="item3">A</div>
+        <div class="item3">B</div>
+        <div class="item3">C</div>
+        <div class="item3">D</div>
+        <div class="item3">E</div>
+        <div class="item3">F</div>
+        <div class="item3">G</div>   
+
+    </div>
+
+    <br>
+
+    <h3>align-items: baseline;</h3>
+    <p>Alinha os itens pela linha da base de texto</p>
+    <div class="container4">
+        
+        <div class="item4">A</div>
+        <div class="item4">B</div>
+        <div class="item4">C</div>
+        <div class="item4">D</div>
+        <div class="item4">E</div>
+        <div class="item4">F</div>
+        <div class="item4">G</div>
+
+    </div>
+</body>
+</html>

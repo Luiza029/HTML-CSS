@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 002</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container{
+            background-color: darkblue;
+            min-height: 100vh;
+            min-width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #itens{
+            background-color: darkgoldenrod;
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px black;
+
+            /* Posso centralizar o que ta dentro tbm, usando a msm lógica. O fundo azul é pai do fundo dourado e o fundo dourado é o pai do h1*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="itens">
+            <h1>Hey</h1>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container1{
+            display: flex; /* Ele vai ser o pai em relação com os itens 1*/
+            background-color: aqua;
+
+            justify-content: start;
+        }
+        
+        .item1{
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container2{
+            display: flex;
+            background-color: darkblue;
+
+            justify-content: end;
+        }
+        
+        .item2{
+            border: 1px solid white;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container3{
+            display: flex;
+            background-color: darkgoldenrod;
+
+            justify-content: center;
+        }
+        
+        .item3{
+            border: 1px solid white;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container4{
+            display: flex;
+            background-color: firebrick;
+
+            justify-content: space-between;
+        }
+        
+        .item4{
+            border: 1px solid white;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .container5{
+            display: flex;
+            background-color: gray;
+
+            justify-content: space-around;
+        }
+        
+        .item5{
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container6{
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .item6{
+            border: 1px solid white;
+            color: white;
+            padding: 20px;
+        }
+
+        p{
+            padding-bottom: 10px;
+        }
+        </style>
+</head>
+<body>
+    <h1>Resumo de Flex Box</h1>
+    <h3>justify-content: Start;</h3>
+    <p>Deixa os itens dentro do pai colado no início do main-axis (eles mudam em relação ao main-axis) configuração padrão</p>
+    <div class="container1">
+        <div class="item1">A</div>
+        <div class="item1">B</div>
+        <div class="item1">C</div>
+        <div class="item1">D</div>
+        <div class="item1">E</div>
+        <div class="item1">F</div>
+        <div class="item1">G</div>
+    </div>
+
+    <br>
+
+    <h3>justify-content: end;</h3>
+    <p>Deixa os itens do pai colado ao final do main-axis (tbm mudam em relação ao main-axis)</p>
+    <div class="container2">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+        <div class="item2">D</div>
+        <div class="item2">E</div>
+        <div class="item2">F</div>
+        <div class="item2">G</div>
+
+    </div>
+
+    <br>
+
+    <h3>justify-content: center;</h3>
+    <p>Deixa os itens cetralizados em relação ao main-axis</p>
+    <div class="container3">
+        <div class="item3">A</div>
+        <div class="item3">B</div>
+        <div class="item3">C</div>
+        <div class="item3">D</div>
+        <div class="item3">E</div>
+        <div class="item3">F</div>
+        <div class="item3">G</div>   
+
+    </div>
+
+    <br>
+
+    <h3>justify-content: space-between;</h3>
+    <p>Distribui os espaços por igual entre eles, mas as extremidades ficam colado no início e no final </p>
+    <div class="container4">
+        
+        <div class="item4">A</div>
+        <div class="item4">B</div>
+        <div class="item4">C</div>
+        <div class="item4">D</div>
+        <div class="item4">E</div>
+        <div class="item4">F</div>
+        <div class="item4">G</div>
+
+    </div>
+
+    <br>
+    
+    <h3>justify-content: space-around;</h3>
+    <p>Distribui os espaços por iguais, inclusive nas pontas</p>
+    <div class="container5">
+        <div class="item5">A</div>
+        <div class="item5">B</div>
+        <div class="item5">C</div>
+        <div class="item5">D</div>
+        <div class="item5">E</div>
+        <div class="item5">F</div>
+        <div class="item5">G</div>
+    </div>
+
+    <br>
+    <h3>justify-content: space-evenly</h3>
+    <p>Distribui os espaços por iguais AO REDO DO ITEM</p>
+    <div class="container6">
+        <div class="item6">A</div>
+        <div class="item6">B</div>
+        <div class="item6">C</div>
+        <div class="item6">D</div>
+        <div class="item6">E</div>
+        <div class="item6">F</div>
+        <div class="item6">G</div>
+    </div>
+</body>
+</html>

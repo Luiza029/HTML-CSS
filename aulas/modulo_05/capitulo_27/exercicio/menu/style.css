@@ -53,7 +53,7 @@ header a:hover{
 }
 
 section{
-    display: flex; /* Como eu coloquei o display flez aq, o meu filho é o article*/
+    display: flex; /* Como eu coloquei o display flex aq, o meu filho é o article*/
     justify-content: center;
 }
 

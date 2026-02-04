@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            background-color: darkblue;
+            color: white;
+            padding: 30px;
+            
+            /* Vai deixar a logo no canto esquerdo e o menu no canto direito*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-flow: row wrap;
+        }
+
+        .logo{
+            font-size: 4em;
+        }
+
+        nav {
+           display: flex;
+           flex-flow: row wrap;
+           justify-content: end;
+        }
+
+        nav a{
+            text-decoration: none;
+            padding: 20px;
+            font-size: 1.1em;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Meu site</div>
+        <nav>
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+        </nav>
+    </header>
+</body>
+</html>

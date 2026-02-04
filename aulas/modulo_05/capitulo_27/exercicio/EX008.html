@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        section{
+            
+            display: flex;
+            flex-direction: column;
+        }
+
+        div{
+            padding: 10px;
+            margin: 1px;
+        }
+
+        div.cx1{
+            background-color: darkblue;        
+            color: white;
+        }
+
+        div.cx2{
+            background-color: darkgoldenrod;
+            height: 100px;
+        }
+
+        div.cx3{
+            background-color: darkgreen;
+            width: 70%;
+            height: 500px;
+        }
+
+        div.cx4{
+            background-color: darkred;
+            width: 30%;
+            height: 500px;
+        }
+
+        div.cx5{
+            background-color: darkmagenta;
+        }
+
+        .principal{ /* Criando outra div que pegue as duas que eu quero, basta um flex para ficar uma ao lado da outra*/
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="cx1">Header</div>
+        <div class="cx2">Hero</div>
+        <div class="principal">
+            <div class="cx3">Content</div>
+            <div class="cx4">Sidebar</div>
+        </div>
+        <div class="cx5">Footer</div>
+    </section>
+</body>
+</html>

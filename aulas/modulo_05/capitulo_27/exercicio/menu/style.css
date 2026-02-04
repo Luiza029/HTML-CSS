@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: gray;
+}
+
+header{
+    background-color: #02024d;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center; /* Vai centralizar os itens */
+}
+
+header h1{
+    border: 1px solid;
+    padding: 10px;
+    flex: 0 0 132px;
+}
+
+
+header nav{ /* Virou um container flexivel */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;  /* Vai ficar sempre no final */
+}
+
+header a{
+    background-color: rgb(77, 75, 75);
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    text-align: center;
+
+}
+
+header a:hover{
+    background-color: rgb(24, 23, 23);
+    transition: .5s;
+}
+
+section{
+    display: flex; /* Como eu coloquei o display flez aq, o meu filho é o article*/
+    justify-content: center;
+}
+
+section > article{ /* Logo eu movo tudo para cá */
+    flex: 0 1 600px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+section > article > h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+section > article > p{
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+footer{
+    background-color: #02024d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+

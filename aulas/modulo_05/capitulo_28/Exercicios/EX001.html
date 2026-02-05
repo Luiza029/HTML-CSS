@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: grid;
+
+        /* Vai se adaptar a tela do usuario*/
+        height: 100vh;
+
+        grid-template-rows: 50px 1fr 50px;/* Vai garantir que o header e o footer tenha tamanhos fixos, mas o conteudo principal se adapte*/
+
+        grid-template-columns: 1fr 2fr 1fr; /* Os lados terão um tamanho menor que o do meio */
+    }
+
+    .caixa1{
+        background-color: lightblue;
+        grid-row: 1 / 2;
+        grid-column: 1 / 4;
+    }
+
+    .caixa2{
+        background-color: lightcoral;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    .caixa3{
+        background-color: lightgreen;
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+
+    .caixa4{
+        background-color: lightsalmon;
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+    }
+
+    .caixa5{
+        background-color: lightseagreen;
+        grid-row: 3 / 4;
+        grid-column: 1 / 4;
+    }
+
+
+    
+</style>
+<body>
+    <div class="container">
+        <div class="caixa1">Header</div>
+        <div class="caixa2">Navigation</div>
+        <div class="caixa3">Content</div>
+        <div class="caixa4">Side Bar</div>
+        <div class="caixa5">Footer</div>
+    </div>
+</body>
+</html>
